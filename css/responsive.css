@@ -1,0 +1,146 @@
+@media screen and (max-width: 1800px){
+    .c1{
+        width: 504px;
+    }
+    .c{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1606px){
+    .c1{
+        width: 404px;
+    }
+    .c{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1305px){
+    .c1{
+        width: 304px;
+    }
+    .c{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: 35px;
+    }
+    #navbarNav ul li a{
+        font-size: 18px;
+    }
+    #aP{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1005px){
+    .c1{
+        width: 254px;
+    }
+    .c{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 990px){
+    .opis{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 17px;
+    }
+    #aP{
+        margin-top: 20px;
+        font-size: 17px;
+    }
+    .aB{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 855px){
+    .c1{
+        width: 304px;
+    }
+    .c{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 770px){
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    #ana1{
+        width: 250px;
+    }
+    #aP{
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    .aB{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 686px){
+    .c1{
+        width: 404px;
+    }
+    .c{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 575px){
+    .opis{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    #ana1{
+        width: 230px;
+    }
+    .crna{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 470px){
+    .c1{
+        width: 304px;
+    }
+    .c{
+        width: 300px;
+    }
+    #naslovHrana h5{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 440px){
+    .opis{
+        font-size: 14px;
+    }
+    .naslov{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 340px){
+    .c1{
+        width: 204px;
+    }
+    .c{
+        width: 200px;
+    }
+}

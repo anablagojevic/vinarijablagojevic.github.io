@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+}
+h1{
+    color: rgb(90, 128, 85);
+}
+/*slajder*/
+.slajdovi {
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.slikeS{
+    width: 100%;
+}
+/*Animacije*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.text{
+    line-height: 2;
+    font-size: 16px;
+}
+#pampuri{
+    background:url('../images/vinograd.jpg');
+    background-size: cover;
+    height: 518px;
+}
+#pampuri .bg-pampuri{
+    background-color: rgb(0,0,0,0.5);
+    height: inherit;
+}
+.crna{
+    color: #000;
+}
+#navbarNav{
+    margin-left: 25%;
+}
+#navbarNav ul{
+    list-style-type: none;
+}
+#navbarNav ul li{
+    display: inline-block;
+}
+#navbarNav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 8px;
+    color: rgb(90, 128, 85);
+}
+.span{
+    color: red;
+}
+#naslovHrana{
+    color: white;
+}
+#panel{
+    display: none;
+}
+#divH{
+    background-color: rgb(151, 167, 149);
+}
+#kartice{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.c1{
+    border: 1px solid white;
+    padding: 1px;
+    width: 284px;
+}
+.c{
+    width: 280px;
+}
+.a{
+    background-color: rgb(197, 204, 196);
+}
+#ana1{
+    width: 300px;
+}
+#aP{
+    margin-top: 50px;
+    font-size: 19px;
+}
