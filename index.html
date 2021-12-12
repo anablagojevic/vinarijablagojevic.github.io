@@ -258,7 +258,7 @@
                                 <!--Red za polje za datum-->
                                 <div class="row my-3">
                                     <div class="col-6">
-                                        <select class="form-control" id="text4" name="people" size="1">
+                                        <select class="form-control" id="text4" name="people" size="1" onfocus="Fokus4();" onblur="Lista();">
                                             <option value="0">Broj osoba?</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -267,6 +267,7 @@
                                             <option value="5">5</option>
                                             <option value="6">više od 6</option>
                                         </select>
+                                        <span class="span"></span>
                                     </div>
                                     <div class="col-6">
                                         <input class="form-control" type="datetime-local" id="Test_DatetimeLocal"/>
