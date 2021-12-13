@@ -216,3 +216,21 @@ vina11Div.innerHTML = `<h5 class="card-title text-center naslov">Penusava vina</
     U našoj ponudi možete naći širok izbor i uživati u specifičnom ukusu kvaliteta.
 </p>`;
 vina10Div.appendChild(vina11Div);
+
+//provera dropdown liste
+var lista = document.getElementById("text4");
+var izbor = lista.selectedIndex;
+function Fokus4(){
+    document.querySelector(".span").textContent = "";
+}
+function Lista(){
+    if(izbor != 0){
+        var l = lista.options[lista.selectedIndex].text;
+        var l2 = lista.options[lista.selectedIndex].value;
+        console.log("Text svojstvo ima vrednost: " + l);
+        console.log("Value svojstvo ima vrednost: " + l2);
+    }
+    else{
+        document.querySelector(".span").textContent = "* Molimo izaberite broj osoba.";
+    }
+}
