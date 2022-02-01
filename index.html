@@ -19,13 +19,16 @@
     <body>
 
         <header>
-            <div class="container mt-1">
+            <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <nav class="navbar navbar-expand-lg navbar-light text-center">
                             <!--Ovde ce biti logo-->
                             <a class="navbar-brand" href="index.html">
-                                <h1>V I N A R I J A<br/>B L A G O J E V I Ć</h1>
+                                <img src="images/casa3.png" alt="casa" id="img"/>
+                            </a>
+                            <a class="navbar-brand" href="index.html">
+                                <h1 class="mt-3">Vinarija<br/>Blagojević</h1>
                             </a>
                             <!--Ovo mi sluzi za hamburger meni-->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -33,9 +36,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <!--Ovde ce biti lista iz javascripta-->
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                            </div>
-
+                            <div class="collapse navbar-collapse" id="navbarNav"></div>
                         </nav>
                     </div>
                 </div>
@@ -43,25 +44,13 @@
         </header>
 
         <!--Mesto za slajder-->
-
-        <div class="slajdovi">
-
-            <div class="slajd fade">
-              <img src="images/podrum1.png" alt="podrum" class="slikeS"/>
-            </div>
-            
-            <div class="slajd fade">
-              <img src="images/vinograd1.png" alt="vinograd" class="slikeS"/>
-            </div>
-            
-            <div class="slajd fade">
-              <img src="images/case1.png" alt="case" class="slikeS"/>
-            </div>
-
-            <div class="slajd fade">
-                <img src="images/grozdje.png" alt="flase" class="slikeS"/>
-            </div>
-            
+        <div>
+            <ul class="rslides text-center mb-3">
+                <li><img src="images/vinograd1.png" alt="vinograd" class="slikeS"/></li>
+                <li><img src="images/case1.png" alt="case" class="slikeS"/></li>
+                <li><img src="images/grozdje.png" alt="flase" class="slikeS"/></li>
+                <li><img src="images/podrum1.png" alt="podrum" class="slikeS"/></li>
+            </ul>
         </div>
 
         <!--Deo sa informacijama o vinariji-->
@@ -70,15 +59,14 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class= "col-12">
-                        <h2 id="onama" class="text-center">O nama</h2>
+                        <h2 id="onama" class="text-center">Naša priča</h2>
                     </div>
-
                 </div>
                 <!--Tekst sa informacijama-->
                 <div class="row">
                     <div class= "col-12">
                         <p class="text-center text mt-4">
-                            Porodičnu tradiciju proizvodnje vina nedugejemo duže od 100 godina.
+                            Porodičnu tradiciju proizvodnje vina negujemo duže od 100 godina.
                             Godinama čuvamo prepoznatljiv kvalitet, konstantno unapređujući
                             način proizvodnje i očuvanja naših vina. Godišnje proizvedemo 
                             200.000 boca vina. Zgrada i ceo kompleks naše vinarije je 
@@ -91,55 +79,34 @@
                     </div>
                 </div>
                 <!--Kartice za neka vina iz vinarije-->
-
-                <div class="row" id="vina"></div>
-
+                <div class="row" id="vina1"></div>
             </div>
         
             <!--Div za slike hrane-->
             <div class="container-fluid mt-5 py-5" id="divH">
                 <!--naslov-->
                 <div class="col-12 text-center mb-5" id="naslovHrana">
-                    <h5>Na raspolaganju Vam je uvek širok izbor jela</h5>
+                    <h5>Na raspolaganju vam je uvek širok izbor jela</h5>
                 </div>
                 <!--div za slike hrane koje dolaze iz jsa-->
-                <div id="kartice">
-                    <div class="m-2 c1" id="card-body0"></div>
-                    <div class="m-2 c1" id="card-body1"></div>
-                    <div class="m-2 c1" id="card-body2"></div>
-                    <div class="m-2 c1" id="card-body3"></div>
-                    <div class="m-2 c1" id="card-body4"></div>
-                    <div class="m-2 c1" id="card-body5"></div>
-                </div>
+                <div id="kartice"></div>
             </div>
 
-            <!--Kartice koje ce se pojaviti na klik dugmeta-->
+            <!-- dinamicki unos slika u div sa karticama za vina i njihovih cena -->
             <div class="container">
                 <div class="row">
-                    <div class="card-group mt-5">
-                        <div class="card mr-2 border">
-                            <img src="images/belof.jpg" class="card-img-top" alt="belo"/>
-                            <div class="card-body">
-                                <h5 class="card-title">3990,99din</h5>
-                            </div>
+                    <div class="card-group mt-5 cene">
+                        <div class="card mr-2 border" id="card0">
+                            <div class="card-body" id="h0"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/crnof.jpg" class="card-img-top" alt="crno"/>
-                            <div class="card-body">
-                                <h5 class="card-title">2590,50din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card1">
+                            <div class="card-body" id="h1"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/rozef.jpeg" class="card-img-top" alt="rose"/>
-                            <div class="card-body">
-                                <h5 class="card-title">2780,90din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card2">
+                            <div class="card-body" id="h2"></div>
                         </div>
-                        <div class="card border">
-                            <img src="images/penusavof.jpg" class="card-img-top" alt="rose"/>
-                            <div class="card-body">
-                                <h5 class="card-title">4290,90din</h5>
-                            </div>
+                        <div class="card border" id="card3">
+                            <div class="card-body" id="h3"></div>
                         </div>
                     </div>
                 </div>
@@ -153,112 +120,88 @@
                 <!--Dodatni sadrzaj-->
                 <div class="row" id="panel">
                     <!--Dodatne kartice koje ce se prikazati na klik-->
-                    <div class="card-group mt-5">
-                        <div class="card mr-2 border">
-                            <img src="images/belof2.jpg" class="card-img-top" alt="belof2"/>
-                            <div class="card-body">
-                                <h5 class="card-title">4190,99din</h5>
-                            </div>
+                    <div class="card-group mt-5 cene">
+                        <div class="card mr-2 border" id="card4">
+                            <div class="card-body" id="h4"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/crnof3.jpg" class="card-img-top" alt="crnof3"/>
-                            <div class="card-body">
-                                <h5 class="card-title">3690,50din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card5">
+                            <div class="card-body" id="h5"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/rozef2.jpg" class="card-img-top" alt="rosef2"/>
-                            <div class="card-body">
-                                <h5 class="card-title">4980,90din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card6">
+                            <div class="card-body" id="h6"></div>
                         </div>
-                        <div class="card border">
-                            <img src="images/penusavof2.jpg" class="card-img-top" alt="penusavof2"/>
-                            <div class="card-body">
-                                <h5 class="card-title">5200,90din</h5>
-                            </div>
+                        <div class="card border" id="card7">
+                            <div class="card-body" id="h7"></div>
                         </div>
                     </div>
                     <!--Jos jedan red kartica-->
-                    <div class="card-group my-5">
-                        <div class="card mr-2 border">
-                            <img src="images/belof3.jpg" class="card-img-top" alt="belof3"/>
-                            <div class="card-body">
-                                <h5 class="card-title">7490,99din</h5>
-                            </div>
+                    <div class="card-group my-5 cene">
+                        <div class="card mr-2 border" id="card8">
+                            <div class="card-body" id="h8"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/crnof2.jpg" class="card-img-top" alt="crnof2"/>
-                            <div class="card-body">
-                                <h5 class="card-title">8590,50din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card9">
+                            <div class="card-body" id="h9"></div>
                         </div>
-                        <div class="card mr-2 border">
-                            <img src="images/rozef3.jpg" class="card-img-top" alt="rosef3"/>
-                            <div class="card-body">
-                                <h5 class="card-title">6780,90din</h5>
-                            </div>
+                        <div class="card mr-2 border" id="card10">
+                            <div class="card-body" id="h10"></div>
                         </div>
-                        <div class="card border">
-                            <img src="images/penusavof3.gif" class="card-img-top" alt="penusavof3"/>
-                            <div class="card-body">
-                                <h5 class="card-title">10590,90din</h5>
-                            </div>
+                        <div class="card border" id="card11">
+                            <div class="card-body" id="h11"></div>
                         </div>
                     </div>
                 </div>
                 <!--Kraj sekcije sa karticama koje se pojavljuju na klik-->
             </div>
-
         </main>
+
+        <!-- Misljenja posetilaca - menjanje texta istim pluginom koji je koriscen za slike -->
+        <div id="misljenja">
+            <div class="text-center py-5" id="bg-misljenja">
+                <p class="my-4" id="m">Mišljenja naših posetilaca</p>
+                <img src="images/quote.png" alt="quote"/>
+                <div class="container my-4" id="textS">
+                    <ul class="rslides text-center">
+                        <li>Porodica i ja volimo vina i često obilazimo vinarije i degustiramo. Možemo reći da nam je Vinarija Blagojević omiljena, kako po ukusima vina, tako i po gostoprimivosti i udobnom ambijentu svakog delića objekta.</li>
+                        <li>Ceo kompleks vinarije je na divnom mestu, okruzeno brdima i zelenilom. Pravi odmor za dušu. Mesto je takvo da mogu doći i porodice sa decom, i mladi parovi, a i stariji.</li>
+                        <li>Divni ukusi vina, srdačno i prijatno osoblje, predivan enterijer. Svima koji vole vina, dobru hranu i lepe restorane će se svideti ova vinarija. U svako doba dana je milina provoditi vreme ovde.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <!--Forma za rezervaciju sa pozadinskom slikom-->
-        <div id="pampuri">
+        <div id="pampuri" class="mt-5">
             <div class="bg-pampuri">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 my-4">
+                        <div class="col-12 my-5">
                             <form id="forma" class="needs-validation" novalidate>
                                 <div class="row">
                                     <div class="col-12 text-center">
-                                        <h5 class="text-white mt-2">Rezervišite svoje mesto</h5>
+                                        <h5 class="my-4">Rezervišite svoje mesto</h5>
                                     </div>
                                 </div>
                                 <!--Red za ime i prezime-->
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" id="text1" name="text1" class="form-control my-3" 
-                                        placeholder="Vaše ime" onfocus="Fokus();" onblur="Prazno();" required/>
-                                        <span class="span"></span>
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" id="text2" name="text2" class="form-control my-3" 
-                                        placeholder="Vaše prezime" onfocus="Fokus2();" onblur="Prazno2();" required/>
-                                        <span class="span"></span>
+                                        <input type="text" id="imePrezime" name="imePrezime" class="form-control" placeholder="Ime Prezime"/>
+                                        <span class="span mt-1">Molimo unesite ime i prezime</span>
                                     </div>
                                 </div>
                                 <!--Red za mejl-->
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input required type="email" 
-                                            id="text3"
-                                             name="text3"
-                                             class="form-control my-3"
-                                               placeholder="example@gmail.com"
-                                                onfocus="Fokus3();" 
-                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                                onblur="proveraEmail()"/>
-                                            <div class="invalid-feedback">
-                                                Invalid email.
-                                              </div>
-                                            <span class="span"></span>
+                                            <input type="email" id="mejl" name="mejl" class="form-control mt-3" placeholder="example@gmail.com"/>
+                                            <span class="span mt-1">Molimo unesite validnu mejl adresu</span>
                                         </div>
                                     </div>
                                 </div>
                                 <!--Red za polje za datum-->
-                                <div class="row my-3">
-                                    <div class="col-6">
-                                        <select class="form-control" id="text4" name="people" size="1" onfocus="Fokus4();" onblur="Lista();">
+                                <div class="row my-2">
+                                    <!-- lista za broj osoba -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                        <select class="form-control" name="brojOsoba" id="lista">
                                             <option value="0">Broj osoba?</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -267,27 +210,65 @@
                                             <option value="5">5</option>
                                             <option value="6">više od 6</option>
                                         </select>
-                                        <span class="span"></span>
+                                        <span class="span mt-1">Molimo izaberite broj osoba</span>
                                     </div>
-                                    <div class="col-6">
-                                        <input class="form-control" type="datetime-local" id="Test_DatetimeLocal"/>
+                                    <!-- lista za dane -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                        <select class="form-control" name="Dan" id="lista2">
+                                            <option value="0">Izaberite dan</option>
+                                        </select>
+                                        <span class="span mt-1">Molimo izaberite dan</span>
+                                    </div>
+                                    <!-- lista za mesece -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                        <select class="form-control m" name="Mesec" id="lista3">
+                                            <option value="0">Izaberite mesec</option>
+                                        </select>
+                                        <span class="span mt-1">Molimo izaberite mesec</span>
+                                    </div>
+                                    <!-- lista za vreme -->
+                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                        <select class="form-control m" name="Vreme" id="lista4">
+                                            <option value="0">Izaberite vreme</option>
+                                        </select>
+                                        <span class="span mt-1">Molimo izaberite vreme</span>
                                     </div>
                                 </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12 text-center">
+                                        <div class="form-check form-check-inline" id="rb">
+                                            <label class="form-check-label mr-3" for="inlineRadio1">Deo objekta?</label>
+
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Restoran"/>
+                                            <label class="form-check-label mr-2" for="inlineRadio1">Restoran</label>
+
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Bašta"/>
+                                            <label class="form-check-label" for="inlineRadio2">Bašta</label>
+                                        </div>
+                                        <span class="span mt-1">Molimo izaberite deo objekta</span>
+                                    </div>
+                                </div>
+
                                 <!--Red za polje za poruku-->
                                 <div class="row my-4">
                                     <div class="col-12">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" 
-                                        placeholder="Pišite nam!" rows="4" data-length="300"></textarea>
-                                        <span class="span"></span>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1 poljeT" 
+                                        placeholder="Pišite nam! Max broj karaktera je 10!" rows="4" maxlength="10"></textarea>
                                     </div>
                                 </div>
+
+
+
                                 <!--Red za dugme posalji-->
                                 <div class="row">
                                     <div class="col-12 text-center mt-3">
-                                        <input class="btn btn-light mr-3" type="reset" value="Ponovo"/>
-                                        <button type="submit" class="btn btn-light" onclick="Rezervisano();">Rezervišite</button>
+                                        <input class="btn btn-light mb-1" type="button" id="btnRezervisite" value="Rezervišite"/>
+                                        <br/>
+                                        <span id="spanR"></span>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>
@@ -295,28 +276,48 @@
             </div>
         </div>
 
+
+
         <!--Div za autora-->
         <div class="container-fluid a py-4">
             <div class="container my-5 text-center" id="ana">
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <img src="images/ana.jpg" alt="ana" id="ana1"/>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p id="aP">Moje ime je Ana Blagojević. 
+                            Rođena sam 2001. godine u Zemunu i trenutno sam studentkinja
+                            druge godine Visoke ICT škole u Beogradu, na smeru Internet tehnologije,
+                            modul za Web programiranje. Prethodno sam završila srednju Ekonomsku školu u Zemunu. 
+                            Ukoliko želite da saznate nešto više o meni, mom obrazovanju i veštinama
+                            kojim raspolažem, posetite moj portfolio na linku ispod.
+                        </p>
+                        <a href = "https://anablagojevic.github.io/anablagojevicportfolio.github.io/" target = "_blank">
+                            <button type="button" class="btn btn-light aB border">PORTFOLIO</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+        
+
 
         <!--Footer-->
         <footer class="mt-5">
             <div class="container">
                 <!--Prvi red-->
                 <div class="row">
-
                     <div class="col-12 text-center">
                         <hr/>
                         <h5 class="crna mt-2">Pratite nas</h5>
                         <div class="d-flex justify-content-center m-2">
-                            <a href="https://www.instagram.com/" target="_blank"> <img src="images/wa.png" alt="ig" /> </a>
-                            <a href="https://www.facebook.com/" target="_blank"> <img src="images/ig.png" alt="ig" /> </a>
-                            <a href="https://www.whatsapp.com/" target="_blank"> <img src="images/fb.png" alt="ig" /> </a>
+                            <a href="https://www.instagram.com/" target="_blank"> <img src="images/wa.png" alt="ig"/> </a>
+                            <a href="https://www.facebook.com/" target="_blank"> <img src="images/ig.png" alt="ig"/> </a>
+                            <a href="https://www.whatsapp.com/" target="_blank"> <img src="images/fb.png" alt="ig"/> </a>
                         </div>
                     </div>
-
                 </div>
                 <!--Drugi red futera sa jednom kolonom-->
                 <div class="row">
@@ -342,5 +343,6 @@
         <!--Moj JavaScript-->
         <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
     </body>
 </html>
