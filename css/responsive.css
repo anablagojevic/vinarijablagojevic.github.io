@@ -32,6 +32,9 @@
     #aP{
         font-size: 17px;
     }
+    #textS{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 1005px){
     .c1{
@@ -41,17 +44,12 @@
         width: 250px;
     }
 }
-@media screen and (max-width: 900px){
-    h1{
-        font-size: 30px;
-    }
-}
 @media screen and (max-width: 990px){
     .opis{
         font-size: 15px;
     }
     h5{
-        font-size: 17px;
+        font-size: 19px;
     }
     #aP{
         margin-top: 20px;
@@ -60,6 +58,14 @@
     .aB{
         font-size: 14px;
     }
+    .m{
+        margin-top: 7px;
+    }
+}
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 855px){
     .c1{
@@ -67,6 +73,9 @@
     }
     .c{
         width: 300px;
+    }
+    .kc{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 770px){
@@ -77,7 +86,7 @@
         font-size: 27px;
     }
     h5{
-        font-size: 14px;
+        font-size: 18px;
     }
     .text{
         font-size: 15px;
@@ -89,10 +98,16 @@
     }
     #aP{
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 15px;
     }
     .aB{
-        font-size: 11px;
+        font-size: 15px;
+    }
+    #lista2{
+        margin-top: 7px;
+    }
+    #textS{
+        width: 65%;
     }
 }
 @media screen and (max-width: 686px){
@@ -107,14 +122,26 @@
     .opis{
         font-size: 16px;
     }
-    h5{
-        font-size: 18px;
-    }
     #ana1{
         width: 230px;
     }
     .crna{
         font-size: 13px;
+    }
+    #m{
+        font-size: 20px;
+    }
+    #textS{
+        width: 70%;
+    }
+    #textS li{
+        font-size: 18px;
+    }
+    .kc{
+        font-size: 20px;
+    }
+    #img{
+        width: 80px;
     }
 }
 @media screen and (max-width: 470px){
@@ -136,6 +163,11 @@
         font-size: 19px;
     }
 }
+@media screen and (max-width: 361px){
+    #img{
+        width: 60px;
+    }
+}
 @media screen and (max-width: 340px){
     .c1{
         width: 204px;
@@ -144,3 +176,5 @@
         width: 200px;
     }
 }
+
+
